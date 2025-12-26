@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаг 2 – Способ доставки</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body data-page="checkout">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">cmdShop</a>
+        <div class="header-center">
+            <div class="search">
+                <input type="text" placeholder="Поиск...">
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="main-nav-link" data-page="home">Главная</a>
+                <a href="catalog.html" class="main-nav-link" data-page="catalog">Каталог</a>
+                <a href="contacts.html" class="main-nav-link" data-page="contacts">Контакты</a>
+                <a href="blog.html" class="main-nav-link" data-page="blog">Блог</a>
+            </nav>
+        </div>
+        <div class="header-icons">
+            <a class="icon-btn" href="catalog.html">♡</a>
+            <a class="icon-btn" href="cart.html">🛒</a>
+            <a class="icon-btn" href="profile.html">👤</a>
+        </div>
+    </div>
+</header>
+
+<main class="page-main container">
+    <div class="steps">
+        <div class="step">
+            <div class="step-circle">1</div><div>Шаг 1<br>Адрес</div>
+        </div>
+        <div class="step active">
+            <div class="step-circle">2</div><div>Шаг 2<br>Способ доставки</div>
+        </div>
+        <div class="step">
+            <div class="step-circle">3</div><div>Шаг 3<br>Оплата</div>
+        </div>
+    </div>
+
+    <h1 class="page-title" style="margin-bottom:20px;">Способ доставки</h1>
+
+    <label class="radio-card">
+        <input type="radio" name="delivery" checked>
+        <div class="radio-main">
+            <div>
+                <div><strong>Бесплатно</strong> — Обычная доставка</div>
+                <div class="radio-note">Доставим ваш заказ в течение 3–5 дней.</div>
+            </div>
+            <div style="font-size:13px; color:#666;">15 января 2026</div>
+        </div>
+    </label>
+
+    <label class="radio-card">
+        <input type="radio" name="delivery">
+        <div class="radio-main">
+            <div>
+                <div><strong>950 руб.</strong> — Экспресс доставка</div>
+                <div class="radio-note">Получите заказ как можно скорее.</div>
+            </div>
+            <div style="font-size:13px; color:#666;">31 декабря 2025</div>
+        </div>
+    </label>
+
+    <label class="radio-card">
+        <input type="radio" name="delivery">
+        <div class="radio-main">
+            <div>
+                <div><strong>Запланировать</strong></div>
+                <div class="radio-note">Выберите удобную дату доставки.</div>
+            </div>
+            <div style="font-size:13px; color:#666;">Выберите дату</div>
+        </div>
+    </label>
+
+    <div class="checkout-actions">
+        <a href="checkout-address.html" class="btn btn-secondary btn-full">Назад</a>
+        <a href="checkout-payment.html" class="btn btn-primary btn-full">Далее</a>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <div class="footer-logo">Ed.Ars&lt;Ays</div>
+            <p class="footer-text">Мы создаём пространства, в которых живут ваши истории...</p>
+        </div>
+        <div>
+            <div class="footer-title">Услуги</div>
+            <ul class="footer-links">
+                <li>Способы оплаты</li>
+                <li>Способы доставки</li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-title">Помощь покупателю</div>
+            <ul class="footer-links">
+                <li>Найти заказ</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div>© 2025 Ed.Ars&lt;Ays</div>
+        <div class="footer-social">📱 💬 📷</div>
+    </div>
+</footer>
+</body>
+</html>
