@@ -2,29 +2,322 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <title>Ed.Ars&lt;Ays – Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>cmdShop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
-<body>
-    <header>
-        <span class="logo">cmdShop</span>
-        <nav>
-            <a href="" class="catalog">Каталог</a>
-            <a href="" class="shops">Магазины</a>
-            <a href="" class="review">Отзывы</a>
-            <a href="">
-                <img class="basket" src="./access/svg/business/basket_line.svg" alt="Корзина">
-            </a>
-            <a href="">
-                <img class="user" src="./access/svg/user/user_2_fill.svg" alt="Пользователь">
-            </a>
-        </nav>
-    </header>
-
-    <div class="main">
-        <span>Hello, World!</span>
+<body data-page="home">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">cmdShop</a>
+        <div class="header-center">
+            <div class="search">
+                <input type="text" placeholder="Поиск...">
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="main-nav-link" data-page="home">Главная</a>
+                <a href="catalog.html" class="main-nav-link" data-page="catalog">Каталог</a>
+                <a href="contacts.html" class="main-nav-link" data-page="contacts">Контакты</a>
+                <a href="blog.html" class="main-nav-link" data-page="blog">Блог</a>
+            </nav>
+        </div>
+        <div class="header-icons">
+            <a class="icon-btn" href="catalog.html" title="Избранное">♡</a>
+            <a class="icon-btn" href="cart.html" title="Корзина">🛒</a>
+            <a class="icon-btn" href="profile.html" title="Личный кабинет">👤</a>
+        </div>
     </div>
+</header>
 
+<main class="page-main">
+    <section class="container">
+
+        <!-- HERO -->
+        <div class="hero">
+            <div class="hero-text">
+                <div class="hero-kicker">iPhone 14</div>
+                <h1 class="hero-title">Pro</h1>
+                <p class="hero-subtitle">Создан, чтобы изменить всё к лучшему. Для всех.</p>
+                <div class="hero-actions">
+                    <a href="catalog.html" class="btn btn-outline">Каталог</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <!-- iPhone 14 Pro (Deep Purple) -->
+                <img class="hero-image"
+                     src="https://free-png.ru/wp-content/uploads/2022/09/free-png.ru-121.png"
+                     alt="iPhone 14 Pro">
+            </div>
+        </div>
+
+        <!-- PROMO GRID -->
+        <div class="promo-grid">
+            <!-- PlayStation 5 -->
+            <div class="promo-card dark">
+                <div>
+                    <h2 class="promo-title">Playstation 5</h2>
+                    <p class="promo-text">Невероятно мощная приставка, которая задает новый стандарт игр.</p>
+                </div>
+                <img class="promo-image-right"
+                     src="https://sckhv.ru/upload/iblock/308/italvtrx7ezz1mwkcfjwrkws2up1ckf5.png"
+                     alt="Playstation 5">
+            </div>
+
+            <!-- MacBook Air -->
+            <div class="promo-card">
+                <div>
+                    <h2 class="promo-title">Macbook Air</h2>
+                    <p class="promo-text">Легендарный ноутбук с чипом Apple Silicon для работы и творчества.</p>
+                    <a href="catalog.html" class="btn btn-outline-dark" style="margin-top:16px;">К покупкам</a>
+                </div>
+                <img class="promo-image-right"
+                     src="https://cdn.mtscdn.ru/upload/iblock/293/mba15_m4_midnight_gallery1_202503.png?wid=800&hei=500&fmt=png-alpha&.v=1684946879576"
+                     alt="MacBook Air">
+            </div>
+
+            <!-- AirPods Max -->
+            <div class="promo-card">
+                <div>
+                    <h2 class="promo-title">Apple AirPods Max<br>+ Vision Pro</h2>
+                    <p class="promo-text">Почувствуйте новый уровень звука и погружения в AR.</p>
+                </div>
+                <img class="promo-image-left"
+                     src="https://yabloko-rnd.ru/image/cache/catalog/aksessuary/AirPods/2021/airpodsmax/airpods-max-select-silver-202011-960x960.png"
+                     alt="AirPods Max Silver">
+            </div>
+        </div>
+
+        <!-- CATEGORIES -->
+        <h2 class="section-title">Просмотр по категориям</h2>
+        <div class="categories-row">
+            <div class="category-chip">
+                <div class="category-chip-icon">📱</div>
+                <div>Телефоны</div>
+            </div>
+            <div class="category-chip">
+                <div class="category-chip-icon">⌚️</div>
+                <div>Умные часы</div>
+            </div>
+            <div class="category-chip">
+                <div class="category-chip-icon">📷</div>
+                <div>Фотоаппараты</div>
+            </div>
+            <div class="category-chip">
+                <div class="category-chip-icon">🎧</div>
+                <div>Наушники</div>
+            </div>
+            <div class="category-chip">
+                <div class="category-chip-icon">💻</div>
+                <div>Компьютеры</div>
+            </div>
+            <div class="category-chip">
+                <div class="category-chip-icon">🎮</div>
+                <div>Игровое</div>
+            </div>
+        </div>
+
+        <!-- PRODUCTS TABS -->
+        <div class="tabs">
+            <div class="tab-link active">Новинки</div>
+            <div class="tab-link">Популярное</div>
+            <div class="tab-link">Избранное</div>
+        </div>
+
+        <div class="products-grid">
+            <!-- 1: iPhone 14 Pro Max -->
+            <article class="product-card">
+                <div class="product-fav">♡</div>
+                <a href="product.html" class="product-image-wrap">
+                    <img
+                        src="https://apple-com.ru/image/cache/catalog/product/iphone%2014%20Pro/65332c7271fa39be1416af8b2609b256-800x540h.jpeg.webp"
+                        alt="iPhone 14 Pro Max Deep Purple">
+                </a>
+                <div class="product-title">
+                    Apple iPhone 14 Pro Max 128GB Deep Purple
+                </div>
+                <div class="product-price">84 910 руб.</div>
+                <a href="cart.html" class="btn btn-primary btn-full">Купить</a>
+            </article>
+
+            <!-- 2: камера (условно, возьмём iPhone в роли камеры) -->
+            <article class="product-card">
+                <div class="product-fav">♡</div>
+                <a href="product.html" class="product-image-wrap">
+                    <img
+                        src="https://photowebexpo.ru/assets/uploads/images/NEWS/1-Ets/Blackmagic/Pocket-Cinema-Camera-6K-Pro/PhotoWebExpo-Blackmagic-predstavila-novuyu-Pocket-Cinema-Camera-6K-Pro-s-EF-mount-.jpg"
+                        alt="Camera">
+                </a>
+                <div class="product-title">
+                    Blackmagic Pocket Cinema Camera 6K
+                </div>
+                <div class="product-price">235 910 руб.</div>
+                <a href="cart.html" class="btn btn-primary btn-full">Купить</a>
+            </article>
+
+            <!-- 3: Apple Watch -->
+            <article class="product-card">
+                <div class="product-fav">♡</div>
+                <a href="product.html" class="product-image-wrap">
+                    <img
+                        src="https://zurmarket.ru/upload/iblock/c4b/cc5u4ucvwt2sw2rlyj3t9e7c2uqry0j7/1.PNG"
+                        alt="Apple Watch">
+                </a>
+                <div class="product-title">
+                    Apple Watch Series 9 GPS 41mm Starlight Aluminium
+                </div>
+                <div class="product-price">37 910 руб.</div>
+                <a href="cart.html" class="btn btn-primary btn-full">Купить</a>
+            </article>
+
+            <!-- 4: AirPods Max Silver -->
+            <article class="product-card">
+                <div class="product-fav">♡</div>
+                <a href="product.html" class="product-image-wrap">
+                    <img
+                        src="https://yabloko-rnd.ru/image/cache/catalog/aksessuary/AirPods/2021/airpodsmax/airpods-max-select-silver-202011-960x960.png"
+                        alt="AirPods Max Silver">
+                </a>
+                <div class="product-title">
+                    AirPods Max Silver
+                </div>
+                <div class="product-price">51 910 руб.</div>
+                <a href="cart.html" class="btn btn-primary btn-full">Купить</a>
+            </article>
+
+            <!-- 5: Samsung watch — используем Apple Watch как фото -->
+            <article class="product-card">
+                <div class="product-fav">♡</div>
+                <a href="product.html" class="product-image-wrap">
+                    <img
+                        src="https://cdn.mtscdn.ru/upload/iblock/6a4/SM_R960_001_Front_Black.png"
+                        alt="Samsung Galaxy Watch">
+                </a>
+                <div class="product-title">Samsung Galaxy Watch6 Classic 47mm Black</div>
+                <div class="product-price">33 210 руб.</div>
+                <a href="cart.html" class="btn btn-primary btn-full">Купить</a>
+            </article>
+
+            <!-- 6: Galaxy Fold – используем iPhone для фото -->
+            <article class="product-card">
+                <div class="product-fav">♡</div>
+                <a href="product.html" class="product-image-wrap">
+                    <img
+                        src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/723/606/798/814/213/7/100058892362b0.jpeg"
+                        alt="Galaxy Fold">
+                </a>
+                <div class="product-title">Galaxy Z Fold5 256GB Phantom Black</div>
+                <div class="product-price">161 910 руб.</div>
+                <a href="cart.html" class="btn btn-primary btn-full">Купить</a>
+            </article>
+
+            <!-- 7: Galaxy Buds – используем AirPods Pro -->
+            <article class="product-card">
+                <div class="product-fav">♡</div>
+                <a href="product.html" class="product-image-wrap">
+                    <img
+                        src="https://myphone.one/wp-content/uploads/2024/02/graphite-1.png"
+                        alt="AirPods Pro / Galaxy Buds">
+                </a>
+                <div class="product-title">Galaxy Buds FE Graphite</div>
+                <div class="product-price">9 200 руб.</div>
+                <a href="cart.html" class="btn btn-primary btn-full">Купить</a>
+            </article>
+
+            <!-- 8: iPad 10.2 -->
+            <article class="product-card">
+                <div class="product-fav">♡</div>
+                <a href="product.html" class="product-image-wrap">
+                    <img
+                        src="https://hi-stores.ru/upload/iblock/ad4/irtevgc1sshdz8vtrsx05junw6c8w5ux.jpg"
+                        alt="iPad 10.2 Silver">
+                </a>
+                <div class="product-title">
+                    Apple iPad 10.2&quot; 64GB Wi‑Fi Silver 2021
+                </div>
+                <div class="product-price">36 910 руб.</div>
+                <a href="cart.html" class="btn btn-primary btn-full">Купить</a>
+            </article>
+        </div>
+
+        <!-- FEATURE BLOCK -->
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div>
+                    <h3 class="feature-title">Popular Products</h3>
+                    <p class="feature-text">Apple Watch — это ваш идеальный компаньон для занятий спортом и общения.</p>
+                </div>
+                <a href="catalog.html" class="btn btn-outline-dark" style="margin-top:18px;">К покупкам</a>
+            </div>
+            <div class="feature-card">
+                <div>
+                    <h3 class="feature-title">iPad Pro</h3>
+                    <p class="feature-text">Мощность ноутбука и портативность планшета с чипом M2.</p>
+                </div>
+                <a href="catalog.html" class="btn btn-outline-dark" style="margin-top:18px;">К покупкам</a>
+            </div>
+            <div class="feature-card">
+                <div>
+                    <h3 class="feature-title">Samsung Galaxy</h3>
+                    <p class="feature-text">Современные смартфоны с потрясающими экранами и камерами.</p>
+                </div>
+                <a href="catalog.html" class="btn btn-outline-dark" style="margin-top:18px;">К покупкам</a>
+            </div>
+            <div class="feature-card">
+                <div>
+                    <h3 class="feature-title">MacBook Pro</h3>
+                    <p class="feature-text">Создан для профессионалов, которым нужна максимальная производительность.</p>
+                </div>
+                <a href="catalog.html" class="btn btn-outline-dark" style="margin-top:18px;">К покупкам</a>
+            </div>
+        </div>
+
+        <!-- SALE BANNER -->
+        <div class="sale-banner">
+            <div>
+                <h2 class="sale-title">Большая зимняя распродажа</h2>
+                <p class="sale-text">Скидки до −50% на всей технике. Успей обновить свои гаджеты до наступления холодов.</p>
+                <a href="catalog.html" class="btn btn-outline">К покупкам</a>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <div class="footer-logo">Ed.Ars&lt;Ays</div>
+            <p class="footer-text">
+                Мы создаём пространства, в которых живут ваши истории. Глубоко погружаясь в ваш образ жизни и
+                эстетические предпочтения, мы превращаем дом в истинное отражение вас самих.
+            </p>
+        </div>
+        <div>
+            <div class="footer-title">Услуги</div>
+            <ul class="footer-links">
+                <li>Программа лояльности</li>
+                <li>Подарочные карты</li>
+                <li>Способы оплаты</li>
+                <li>Способы доставки</li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-title">Помощь покупателю</div>
+            <ul class="footer-links">
+                <li>Найти заказ</li>
+                <li>Условия доставки</li>
+                <li>Обмен и возврат товаров</li>
+                <li>Гарантии</li>
+                <li>Часто задаваемые вопросы</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div>© 2025 Ed.Ars&lt;Ays</div>
+        <div class="footer-social">📱 💬 📷</div>
+    </div>
+</footer>
 </body>
 </html>

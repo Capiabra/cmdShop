@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаг 1 – Адрес доставки</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body data-page="checkout">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">cmdShop</a>
+        <div class="header-center">
+            <div class="search">
+                <input type="text" placeholder="Поиск...">
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="main-nav-link" data-page="home">Главная</a>
+                <a href="catalog.html" class="main-nav-link" data-page="catalog">Каталог</a>
+                <a href="contacts.html" class="main-nav-link" data-page="contacts">Контакты</a>
+                <a href="blog.html" class="main-nav-link" data-page="blog">Блог</a>
+            </nav>
+        </div>
+        <div class="header-icons">
+            <a class="icon-btn" href="catalog.html">♡</a>
+            <a class="icon-btn" href="cart.html">🛒</a>
+            <a class="icon-btn" href="profile.html">👤</a>
+        </div>
+    </div>
+</header>
+
+<main class="page-main container">
+    <div class="steps">
+        <div class="step active">
+            <div class="step-circle">1</div><div>Шаг 1<br>Адрес</div>
+        </div>
+        <div class="step">
+            <div class="step-circle">2</div><div>Шаг 2<br>Способ доставки</div>
+        </div>
+        <div class="step">
+            <div class="step-circle">3</div><div>Шаг 3<br>Оплата</div>
+        </div>
+    </div>
+
+    <h1 class="page-title" style="margin-bottom:20px;">Выберите адрес</h1>
+
+    <label class="radio-card">
+        <input type="radio" name="address" checked>
+        <div class="radio-main">
+            <div>
+                <div>
+                    Дзержинского 42/2
+                    <span class="radio-tag">ДОМ</span>
+                </div>
+                <div class="radio-note">Республика Саха (Якутия), г. Якутск, 677000</div>
+            </div>
+            <div style="font-size:18px; opacity:.5;">✎</div>
+        </div>
+    </label>
+
+    <label class="radio-card">
+        <input type="radio" name="address">
+        <div class="radio-main">
+            <div>
+                <div>
+                    Кулаковского 48
+                    <span class="radio-tag">УНИВЕРСИТЕТ</span>
+                </div>
+                <div class="radio-note">Республика Саха (Якутия), г. Якутск, 677010</div>
+            </div>
+            <div style="font-size:18px; opacity:.5;">✎</div>
+        </div>
+    </label>
+
+    <div style="text-align:center; margin:34px 0 10px;">
+        <button class="btn btn-secondary">+ Добавить новый адрес</button>
+    </div>
+
+    <div class="checkout-actions">
+        <a href="cart.html" class="btn btn-secondary btn-full">Назад</a>
+        <a href="checkout-delivery.html" class="btn btn-primary btn-full">Далее</a>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <div class="footer-logo">Ed.Ars&lt;Ays</div>
+            <p class="footer-text">Мы создаём пространства, в которых живут ваши истории...</p>
+        </div>
+        <div>
+            <div class="footer-title">Услуги</div>
+            <ul class="footer-links">
+                <li>Способы оплаты</li>
+                <li>Способы доставки</li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-title">Помощь покупателю</div>
+            <ul class="footer-links">
+                <li>Найти заказ</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div>© 2025 Ed.Ars&lt;Ays</div>
+        <div class="footer-social">📱 💬 📷</div>
+    </div>
+</footer>
+</body>
+</html>

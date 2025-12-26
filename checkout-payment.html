@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаг 3 – Оплата заказа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body data-page="checkout">
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">cmdShop</a>
+        <div class="header-center">
+            <div class="search">
+                <input type="text" placeholder="Поиск...">
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="main-nav-link" data-page="home">Главная</a>
+                <a href="catalog.html" class="main-nav-link" data-page="catalog">Каталог</a>
+                <a href="contacts.html" class="main-nav-link" data-page="contacts">Контакты</a>
+                <a href="blog.html" class="main-nav-link" data-page="blog">Блог</a>
+            </nav>
+        </div>
+        <div class="header-icons">
+            <a class="icon-btn" href="catalog.html">♡</a>
+            <a class="icon-btn" href="cart.html">🛒</a>
+            <a class="icon-btn" href="profile.html">👤</a>
+        </div>
+    </div>
+</header>
+
+<main class="page-main container">
+    <div class="steps">
+        <div class="step">
+            <div class="step-circle">1</div><div>Шаг 1<br>Адрес</div>
+        </div>
+        <div class="step">
+            <div class="step-circle">2</div><div>Шаг 2<br>Способ доставки</div>
+        </div>
+        <div class="step active">
+            <div class="step-circle">3</div><div>Шаг 3<br>Способ оплаты</div>
+        </div>
+    </div>
+
+    <div class="checkout-layout">
+        <!-- summary -->
+        <aside>
+            <div class="summary-card">
+                <h3>Итого</h3>
+
+                <div class="summary-field">
+                    <div class="summary-label">Товары</div>
+                </div>
+
+                <div class="cart-item" style="padding:10px 0;border:none;">
+                    <div class="cart-item-left">
+                        <div class="cart-item-img cart-item-img--sm">
+                            <img src="https://placehold.co/200x200/f5f5f5/000000?text=iPhone+14+Pro+Max" alt="">
+                        </div>
+                        <div style="font-size:13px;">
+                            Apple iPhone 14 Pro Max 128Gb<br>
+                            <strong>84 910 руб.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" style="padding:10px 0;border:none;">
+                    <div class="cart-item-left">
+                        <div class="cart-item-img cart-item-img--sm">
+                            <img src="https://placehold.co/200x200/ffffff/000000?text=AirPods+Max" alt="">
+                        </div>
+                        <div style="font-size:13px;">
+                            AirPods Max Silver<br>
+                            <strong>51 910 руб.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" style="padding:10px 0;border:none;">
+                    <div class="cart-item-left">
+                        <div class="cart-item-img cart-item-img--sm">
+                            <img src="https://placehold.co/200x200/f5f5f5/000000?text=Apple+Watch" alt="">
+                        </div>
+                        <div style="font-size:13px;">
+                            Apple Watch Series 9 GPS 41mm<br>
+                            <strong>37 910 руб.</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary-field">
+                    <div class="summary-label">Адрес</div>
+                    <div>Республика Саха (Якутия), г. Якутск, 677000</div>
+                </div>
+
+                <div class="summary-field">
+                    <div class="summary-label">Способ доставки</div>
+                    <div>Бесплатно, обычная доставка</div>
+                </div>
+
+                <div class="summary-row">
+                    <span>Итого</span><span>174 730 руб.</span>
+                </div>
+                <div class="summary-row">
+                    <span>Стоимость доставки</span><span>Бесплатно</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Всего</span><span>174 730 руб.</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- payment form -->
+        <section>
+            <h1 class="page-title" style="margin-bottom:10px;">Способы оплаты</h1>
+
+            <div class="payment-method-tabs">
+                <div class="payment-tab active">Банковская карта</div>
+                <div class="payment-tab">СБП</div>
+                <div class="payment-tab">Оплата при получении</div>
+            </div>
+
+            <div class="tinkoff-card">
+                <div class="tinkoff-logo">TINKOFF</div>
+                <div class="tinkoff-chip"></div>
+                <div class="tinkoff-number">**** **** **** 4291</div>
+                <div class="tinkoff-footer">
+                    <div>IVAN PETROV</div>
+                    <div>VALID THRU 12/28</div>
+                </div>
+            </div>
+
+            <form id="payment-form">
+                <div style="display:grid; gap:14px; max-width:420px;">
+                    <input class="input" type="text" placeholder="Имя держателя" required>
+                    <input class="input" type="text" placeholder="Номер карты" maxlength="19" required>
+                    <div style="display:flex; gap:12px;">
+                        <input class="input" type="text" placeholder="Срок действия (MM/YY)" maxlength="5" required>
+                        <input class="input" type="text" placeholder="CVV/CVC" maxlength="3" required>
+                    </div>
+                    <label style="font-size:13px; display:flex; align-items:center; gap:8px; margin-top:2px;">
+                        <input type="checkbox" checked style="accent-color:black;">
+                        <span>Запомнить карту</span>
+                    </label>
+                </div>
+
+                <div class="checkout-actions" style="margin-top:26px;">
+                    <a href="checkout-delivery.html" class="btn btn-secondary btn-full">Назад</a>
+                    <button type="submit" class="btn btn-primary btn-full">Оплатить</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
+
+<!-- MODAL fake success -->
+<div class="modal" id="success-modal">
+    <div class="modal-box">
+        <div class="modal-check">✓</div>
+        <h2 style="font-size:20px; margin-bottom:8px;">Оплата прошла успешно</h2>
+        <p style="font-size:13px; color:#666; margin-bottom:18px;">
+            Заказ <strong>#883921</strong> принят и передан в обработку.
+        </p>
+        <button id="success-close" class="btn btn-primary btn-full">Вернуться на главную</button>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <div class="footer-logo">Ed.Ars&lt;Ays</div>
+            <p class="footer-text">Мы создаём пространства, в которых живут ваши истории...</p>
+        </div>
+        <div>
+            <div class="footer-title">Услуги</div>
+            <ul class="footer-links">
+                <li>Способы оплаты</li>
+                <li>Способы доставки</li>
+            </ul>
+        </div>
+        <div>
+            <div class="footer-title">Помощь покупателю</div>
+            <ul class="footer-links">
+                <li>Найти заказ</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div>© 2025 Ed.Ars&lt;Ays</div>
+        <div class="footer-social">📱 💬 📷</div>
+    </div>
+</footer>
+</body>
+</html>
